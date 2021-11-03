@@ -3,3 +3,46 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container-header {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: black;
+    width: 10em;
+    height: 100vh;
+    position: fixed;
+}
+
+header div {
+    color: white;
+}
+
+.container-main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+.main-header {
+    background-color: #080B12;
+    height: 3em;
+    width: calc(100vw - 10em);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.main-main {
+    background-color: #141922;
+    height: 100vh;
+    width: calc(100vw - 10em);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+
