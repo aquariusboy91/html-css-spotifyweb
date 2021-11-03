@@ -4,9 +4,16 @@
     box-sizing: border-box;
 }
 
-.container-header {
+.container-principale {
     display: flex;
-    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: flex-end;
+
+}
+.container-header {
+    height: 100vh;
+    width: 10em;
 }
 
 header {
@@ -25,15 +32,17 @@ header div {
     flex-direction: column;
     flex-wrap: wrap;
     align-content: flex-end;
+    
 }
 
 .main-header {
     background-color: #080B12;
-    height: 3em;
+    height: 5em;
     width: calc(100vw - 10em);
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    position: fixed;
 }
 
 .main-main {
@@ -43,6 +52,14 @@ header div {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    padding-top: 5em;
     
+}
+
+footer {
+    height: 5em;
+    background-color: #282828;
+    width: 100vw;
+    position: fixed;
 }
 
