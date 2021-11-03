@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
 .container-principale {
     display: flex;
     flex-wrap: nowrap;
@@ -23,8 +28,35 @@ header {
     position: fixed;
 }
 
+header ul {
+    font-size: small;
+}
+
 header div {
     color: white;
+}
+
+.cont-lista-header {
+    margin: 1em;
+}
+
+.cont-lista-header ul {
+    list-style-type: none;
+    color: #D2D2D2;
+    margin-top: 1em;
+    line-height: 2em;
+}
+
+li svg{
+    width: 15%;
+    vertical-align: -0.3em;
+    margin-right: 0.3em;
+}
+
+li img{
+    width: 15%;
+    vertical-align: -0.3em;
+    margin-right: 0.3em;
 }
 
 .container-main {
