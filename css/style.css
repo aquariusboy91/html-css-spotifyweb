@@ -41,6 +41,19 @@ body {
 
 .header-bottom {
     height: 48px;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.profile {
+    display: inline-block;
+    background-image: url(../img/profile.svg) ;
+    border-radius: 50px;
+    width: 1.5em;
+    height: 1.5em;
+    background-repeat: no-repeat;
+    background-color: #696969;
+    background-position: center;
 }
 
 .logo {
@@ -181,16 +194,26 @@ footer {
     margin-top: 0.5em;
 }
 
-.utente img {
-    width: 8%;
-    height: 8%;
-    margin-right: 0.5em;
-    margin-top: 0.5em;
-}
 
 .utente span {
-    vertical-align: 0.1em;
+    vertical-align: 0.2em;
     color: white;
     font-size: small;
+    margin-left: 0.2em;
 }           
+
+.nav-footer div {
+    display: inline;
+}
+
+.nav-footer {
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+
+
+
 
