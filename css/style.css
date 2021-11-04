@@ -7,24 +7,40 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;
+    
 }
 
 .container-principale {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 100vh;
+    height: calc(100vh - 90px);
+    overflow: hidden;
+    
 
 }
 .container-header {
     height: 100%;
     width: 10em;
     background-color: black;
+    overflow: hidden;
+    min-height: 480px;
+   
 }
-
 
 .cont-lista-header {
     margin: 1em;
+    height: calc(100% - 80px);
+}
+
+.playlist {
+    height: 70%;
+    overflow-y: auto;
+}
+
+
+.header-bottom {
+    height: 48px;
 }
 
 .logo {
@@ -94,7 +110,8 @@ li img{
     flex-direction: column;
     flex-wrap: wrap;
     align-content: flex-end;
-    height: 100vh;
+    height: 100%;
+   
     
 }
 
@@ -132,13 +149,14 @@ li img{
     flex-direction: row;
     justify-content: flex-end;
     padding-top: 5em;
+  
     
 }
 
 footer {
-    height: 5em;
+    height: 90px;
     background-color: #282828;
-    width: 100%;
+    
     
 }
 
@@ -175,3 +193,4 @@ footer {
     color: white;
     font-size: small;
 }           
+
