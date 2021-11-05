@@ -296,6 +296,17 @@ li img{
     width: 100%;
 }
 
+.artisti-popolari h3 {
+    color: white;
+    margin-left: 1em;
+    margin-top: 2em;
+    
+}
+
+.radious-artisti-popolari {
+    border-radius: 100px;
+}
+
 footer {
     height: 90px;
     background-color: #282828;
