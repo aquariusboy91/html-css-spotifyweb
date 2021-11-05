@@ -162,6 +162,7 @@ li img{
     flex-direction: column;
     justify-content: flex-start;
     padding-top: 5em;
+    overflow-y: scroll;
 }
 
 .nav-main {
@@ -183,9 +184,9 @@ li img{
     margin-bottom: 1em;
 }
 
-.main-content h3 {
+.recently-played h3 {
     color: white;
-    margin-left: 1.5em;
+    margin-left: 1em;
 }
 
 .song-played {
@@ -219,6 +220,80 @@ li img{
     font-weight: bold;
     margin-top: 0.5em;
     font-size: x-small;
+}
+
+.song-for-you h3 {
+    color: white;
+    margin-left: 1em;
+    margin-top: 2em;
+    
+}
+
+.subtitle {
+    color: #7A7C81 ;
+    font-size: small;
+    font-weight: bold;
+    margin-left: 1.5em;
+    margin-top: 0.5em;
+
+
+}
+
+.mixtape {
+    display: flex;
+    justify-content: space-around;
+    margin: 2em 0em 1em 0em;
+    width: 32%;
+}
+
+.mixtape-left {
+    width: 38%;
+}
+
+.mixtape-right {
+    width: 38%;
+}
+
+.mixtape-right div:nth-child(2){
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 0.5em;
+}
+
+.mixtape-right div:nth-child(3){
+    width: 100%;
+    text-align: center;
+    color: #696969;
+    font-weight: bold;
+    margin-top: 0.5em;
+    font-size: x-small;
+}
+
+.mixtape-left div:nth-child(2){
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 0.5em;
+}
+
+.mixtape-left div:nth-child(3){
+    width: 100%;
+    text-align: center;
+    color: #696969;
+    font-weight: bold;
+    margin-top: 0.5em;
+    font-size: x-small;
+}
+
+.mixtape-left img {
+    width: 100%;
+}
+
+.mixtape-right img {
+    width: 100%;
 }
 
 footer {
