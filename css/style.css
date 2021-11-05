@@ -358,3 +358,92 @@ footer {
     color: #A3A3A3;
 
 }
+
+@media screen and (max-width: 600px) {
+    .logo img {
+        display: none;
+
+    }
+
+    .logo {
+        background-image: url(../img/logo-small.svg);
+        height: 5%;
+        width: 2em;
+        background-repeat: no-repeat;
+        margin-left: 0.3em;
+        margin-top: 0;
+        
+    }
+
+    .cont-lista-header {
+        margin-top: 0.1em;
+    }
+
+    .cont-lista-header ul {
+        margin-top: 0.5em;
+        
+    }
+
+    .cont-lista-header li>img {
+        margin-left: 0.5em;
+        width: 2em;
+    }
+
+    .cont-lista-header li>svg {
+        margin-left: 0.5em;
+        width: 2em;
+    }
+
+
+
+    .cont-lista-header span {
+        display: none;
+    }
+
+    .playlist {
+        display: none;
+    }
+
+    .installazione span:nth-child(2) {
+        display: none;
+        border-bottom: none;
+        padding-right: 0.5em;
+    }
+
+    .installazione {
+        border-bottom: none;
+    }
+
+    .installazione span {
+        margin-left: 0.2em;
+    }
+
+    .utente span {
+        display: none;
+    }
+
+    .container-header {
+        width: 2em;
+    }
+
+    .cont-lista-header {
+        margin-left:0; 
+        margin-right: 0;
+        margin-bottom: 2em;
+    }
+
+    .main-header {
+        width: calc(100vw - 2em);
+    }
+
+    .main-main {
+        width: calc(100vw - 2em);
+    }
+
+    .header-bottom {
+        margin-right: 0;
+        margin-left: 0.5em;
+    }
+}
+
+
