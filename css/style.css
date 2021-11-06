@@ -36,6 +36,16 @@ body {
 .playlist {
     height: 70%;
     overflow-y: auto;
+    font-weight: bold;
+}
+
+.playlist li {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.add-song:hover  {
+    background-color: white;
 }
 
 
@@ -73,9 +83,18 @@ body {
     list-style-type: none;
     color: #696969;
     margin-top: 1em;
-    line-height: 2.5em;
+    line-height: 2.6em;
     font-size: x-small;
     padding-bottom: 4em;
+}
+
+.playlist a {
+    text-decoration: none;
+    color: #696969;
+}
+
+.playlist a:hover {
+    color: white;
 }
 
 li svg{
@@ -107,10 +126,21 @@ li img{
 }
 
 .cont-lista-header span {
-    font-size: small;
-    vertical-align: 0.2em;
+    font-size: 12px;
+    vertical-align: -0.1em;
     color: #696969;
+    font-weight: bold;
 }
+
+.cont-lista-header a {
+    text-decoration: none;
+}
+
+
+.cont-lista-header span:hover, img:hover {
+    filter: brightness(100);
+}
+
 
 .fas.fa-plus {
     text-align: center;
@@ -138,6 +168,7 @@ li img{
     position: fixed;
     flex-wrap: wrap;
     align-items: center;
+    z-index: 999;
 }
 
 .upgrade {
@@ -146,6 +177,10 @@ li img{
     border-radius: 20px;
     font-size: 10px;
     margin-right: 1em;
+}
+
+.upgrade:hover {
+    transform: scale(1.1);
 }
 
 .main-header a {
@@ -173,6 +208,20 @@ li img{
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.nav-main div:hover {
+    color: white;
+}
+
+#border {
+    width: 50%;
+    margin: auto;
+    border-bottom:1px solid yellow;
+    height: 1px;
+    display: block;
+    margin-top: 0.2em;
+}
+
 
 .nav-main div {
     display: inline-block;
@@ -322,10 +371,19 @@ footer {
     padding-bottom: 0.5em;
 }
 
+.installazione a {
+    text-decoration: none;
+}
+
+.installazione span:hover {
+    color: white;
+}
+
 .installazione span  {
     font-size: x-small;
     color: #A3A3A3;
     margin-right: 0.5em;
+    font-weight: bold;
 }
 
 .utente {
@@ -345,6 +403,14 @@ footer {
 
 .col-footer-left div {
     display: inline;
+}
+
+.col-footer-left img {
+    filter: none;
+}
+
+.col-footer-left i:last-child:hover {
+    color: white;
 }
 
 .nav-footer {
@@ -378,9 +444,19 @@ footer {
     padding-left: 0.5em;
 }
 
+.brano-play span:last-child {
+    font-weight: bold;
+}
+
+.brano-play span:last-child:hover {
+    text-decoration: underline;
+    color: white;
+}
+
 #autore {
     color: white;
     font-weight: bold;
+    font-size: 11px;
 }
 
 .far.fa-heart {
@@ -412,6 +488,11 @@ footer {
 
 }
 
+.player-top a {
+    text-decoration: none;
+    color: #D2D2D2 ;
+}
+
 .player-top div {
     padding-left: 1em;
     font-size: small;
@@ -425,6 +506,10 @@ footer {
     font-size: x-large;
     vertical-align: -0.2em;
 
+}
+
+#play:hover {
+    transform: scale(1.1);
 }
 
 .col-footer-left {
@@ -456,17 +541,40 @@ footer {
 
 
 #player-active {
-    height: 2px;
+    height: 3px;
     width: 15%;
     background-color: grey;
     display: inline-block;
+    border-radius: 5px;
+    position: relative;
+}
+
+#player-active:hover {
+    background-color: yellow;
 }
 
 #player-static {
-    height: 2px;
+    height: 3px;
     width: 50%;
     background-color: darkgray;
     display: inline-block;
+    border-radius: 5px;
+}
+
+.fas.fa-circle {
+    position: absolute;
+    left: 100%;
+    bottom: 100%;
+    transform: translate(-50%, 75%);
+    opacity: 0;
+    width: 8em;
+    color: white;
+    font-size: 10px;
+}
+
+.fas.fa-circle:hover {
+    opacity: 1;
+
 }
 
 .player-down {
@@ -481,6 +589,7 @@ footer {
 .tempo {
     font-size: xx-small;
     display: inline-block;
+    color: lightgray;
 }
 
 #player-active-right {
@@ -514,6 +623,44 @@ footer {
     display: flex;
     justify-content: flex-end;
 }
+
+.song-container a:hover :first-child {
+    filter: brightness(50%);
+   
+}
+
+.mixtape-left a:hover :first-child {
+    filter: brightness(50%); 
+}
+
+.mixtape-right a:hover :first-child {
+    filter: brightness(50%); 
+}
+
+.relative {
+    position: relative;
+    
+}
+
+#playimg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10em;
+    opacity: 0;
+    
+}
+
+#playimg:hover {
+    color: white;
+    font-size: 5em;
+    opacity: 1;
+    filter: none;
+}
+
+
+
 
 @media screen and (max-width: 1100px){  
     .song-played {
@@ -584,14 +731,6 @@ footer {
 
 }
 
-
-
-
-
-
-
-
-
 @media screen and (max-width: 600px) {
     .logo img {
         display: none;
@@ -617,17 +756,15 @@ footer {
         
     }
 
-    .cont-lista-header li>img {
+    .cont-lista-header a>img {
         margin-left: 0.5em;
         width: 2em;
     }
 
-    .cont-lista-header li>svg {
+    .cont-lista-header a>svg {
         margin-left: 0.5em;
         width: 2em;
     }
-
-
 
     .cont-lista-header span {
         display: none;
@@ -678,5 +815,8 @@ footer {
         margin-left: 0.5em;
     }
 
+    .volume {
+        display: none;
+    }
 }
 
