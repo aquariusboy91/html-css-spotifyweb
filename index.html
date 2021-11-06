@@ -12,18 +12,26 @@
     <title>Spotify Web</title>
 </head>
 <body>
+    <!-- CONTAINER PRINCIPALE -->
     <div class="container-principale">
+
+    <!-- CONTAINER HEADER -->
         <div class="container-header">
             
+        <!-- lista header sinistra con logo iniziale -->
             <div class="cont-lista-header">
+
                 <div class="logo">
                     <img src="img/logo.svg" alt="">
                 </div>
+
                 <ul>
                     <li><a href=""><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="#D2D2D2"/></svg><span>Home</span></a></li>
                         <li><a href=""><img src="img/search.svg" alt=""><span>Cerca</span></a></li>
                         <li><a href=""><img src="img/libreria.svg" alt=""><span>La tua libreria</span></a></li>
                 </ul>
+
+            <!-- sezione playlist  -->
                 <div class="playlist">
                     <h5>PLAYLIST</h5>
                     <a href=""><div class="add-song"><i class="fas fa-plus"></i></div></a>
@@ -39,21 +47,26 @@
                     </ul>
                 </div>
             </div>
+
+             <!-- installazione APP -->
                 <div class="header-bottom">
-                
                     <div class="installazione">
                         <a href=""><span><i class="far fa-arrow-alt-circle-down"></i></span>
                             <span>Installa app</span></a>
                     </div>
+
+            <!-- profilo utente -->
                     <div class="utente"> 
                         <div class="profile"></div> 
                         <span>John Doe</span>
                     </div>
                 </div>
-             
         </div>
 
+        <!-- CONTAINER MAIN CENTRALE  -->
         <div class="container-main">
+
+            <!-- main parte iniziale -->
             <div class="main-header">
                 <a href=""><div class="upgrade">
                     <span>
@@ -61,7 +74,11 @@
                     </span>
                 </div></a>
             </div>
+
+            <!-- main parte centrale -->
             <div class="main-main">
+
+            <!-- barra navigazione main -->
                 <div class="nav-main">
                     <a href=""><div>in evidenza<div id="border"></div>
                     </div></a>
@@ -71,64 +88,79 @@
                     <a href=""><div>nuove uscite</div></a>
                     <a href=""><div>scopri</div></a>
                 </div>
+
+                <!-- sezione tracce recenti -->
                 <div class="recently-played">
                     <h3>Recently Played</h3>
                     <div class="song-played">
+
                         <div class="song-container">
                             <div class="relative" id="filter"><a href="" ><img src="img/stranger.jpeg" alt="" ><i class="far fa-play-circle" id="playimg"></i></a></div>
                             <div><h5>Stranger Things, Vol.1(a Netflix Original Series Soundtrack)</h5></div>
                             <div><span>Kyle Dixon & Michael Stein</span></div>
                         </div>
+
                         <div class="song-container">
                             <div class="relative" id="filter"><a href="" ><img src="img/metal_lifting.jpg" alt=""><i class="far fa-play-circle" id="playimg"></i></a></div>
                             <div><h5>Heavy Metal</h5></div>
                             <div><span>Subtitle</span></div>
                         </div>
+
                         <div class="song-container">
                             <div class="relative" id="filter"><a href="" ><img src="img/aquietplace.jpeg" alt=""><i class="far fa-play-circle" id="playimg"></i></a></div>
                             <div><h5>A quite place</h5></div>
                             <div><span>Subtitle</span></div>
                         </div>
+
                         <div class="song-container">
                             <div class="relative" id="filter"><a href="" ><img src="img/split.jpeg" alt=""><i class="far fa-play-circle" id="playimg"></i></a></div>
                             <div><h5>Split</h5></div>
                             <div><span>Subtitle</span></div>
                         </div>
+
                         <div class="song-container">
                             <div class="relative" id="filter"><a href="" ><img src="img/cure.jpeg" alt=""><i class="far fa-play-circle" id="playimg"></i></a></div>
                             <div><h5>A cure for wellness</h5></div>
                             <div><span>Subtitle</span></div>
                         </div>
+
                         <div class="song-container">
                             <div class="relative" id="filter"><a href="" ><img src="img/sinister.jpeg" alt=""><i class="far fa-play-circle" id="playimg"></i></a></div>
                             <div><h5>Sinister</h5></div>
                             <div><span>Subtitle</span></div>
                         </div>
-                        
                     </div>
                 </div>
+
+                <!-- tracce scelte per te -->
                 <div class="song-for-you">
                     <h3>Creato per John Doe</h3>
                     <div class="subtitle">Più ascolti, più accurati saranno i suggerimenti.</div>
                     <div class="mixtape">
+
                         <div class="mixtape-left">
                             <div class="relative" id="filter"><a href=""><img src="img/radar.jpeg" alt=""><i class="far fa-play-circle" id="playimg"></i></a></div>
                             <div><h5>Release Radar</h5></div>
                         </div>
+
                         <div class="mixtape-right">
                             <div class="relative" id="filter"><a href="" ><img src="img/mixdaily.jpeg" alt=""><i class="far fa-play-circle" id="playimg"></i></a></div>
                             <div><h5>Daily Mix 1</h5></div>
                         </div>
                     </div>
                 </div>
+
+                <!-- sezione artisti popolari -->
                 <div class="artisti-popolari">
                     <h3>Artisti popolari</h3>
                     <div class="subtitle">Più ascolti, più accurati saranno i suggerimenti.</div>
                     <div class="mixtape">
+
                         <div class="mixtape-left">
                             <div class="relative" id="filter"><a href=""><img src="img/einaudi.jpeg" alt="" class="radious-artisti-popolari"><i class="far fa-play-circle" id="playimg"></i></a></div>
                             <div><h5>Einaudi</h5></div>
                         </div>
+
                         <div class="mixtape-right">
                             <div class="relative" id="filter"><a href=""><img src="img/youg.jpeg" alt="" class="radious-artisti-popolari"><i class="far fa-play-circle" id="playimg"></i></a></div>
                             <div><h5>Youg</h5></div>
@@ -140,12 +172,16 @@
         </div>
     </div>
     <footer>
+        <!-- FOOTER -->
         <div class="nav-footer">
+
+            <!-- footer colonna sinistra -->
             <div class="col-footer-left">
 
                <div>
                    <img src="img/player_left.jpg" alt="" class="player-left">
                 </div>
+
                <div class="brano-play">
                    <span id="autore">Sinister</span><br>
                     <span>Brano nome</span>
@@ -156,7 +192,10 @@
                     <div><a href=""><i class="far fa-folder"></i></a></div>
                  </div>
             </div>
+
+            <!-- footer colonna centrale -->
             <div class="col-footer-center">
+
                 <div class="player-top">
                     <div id="fa-random"><a href=""><i class="fas fa-random"></i></a></div>
                     <div><a href=""><i class="fas fa-step-backward"></i></a></div>
@@ -164,18 +203,22 @@
                     <div><a href=""><i class="fas fa-step-forward"></i></a></div>
                     <div><a href=""><i class="fas fa-redo"></i></a></div>
                 </div>
+
                 <div class="player-down">
                     <div class="tempo">0.25</div>
                     <a href=""><div id="player-active"><i class="fas fa-circle" id="pallino-sinistro"></i></div></a><div id="player-static"></div>
                     <div class="tempo">7.25</div>
                 </div>
-                
             </div>
+
+            <!-- footer colonna destra -->
             <div class="col-footer-right">
                 <div class="row">
+                    
                     <div class="pdg-img-footer-right"><a href=""><i class="fas fa-list-ul"></i></a></div>
                     <div class="pdg-img-footer-right"><a href=""><i class="fas fa-desktop"></i></a></div>
                     <div class="pdg-img-footer-right"><a href=""><i class="fas fa-volume-up"></i></a></div>
+
                     <div class="volume">
                         <a href=""><div id="player-active-right"><i class="fas fa-circle" id="pallino-destro"></i></div></a><div id="player-static-right"></div>
                     </div>
